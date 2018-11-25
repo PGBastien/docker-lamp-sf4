@@ -1,8 +1,8 @@
 # What ?
-Start to develop Symfony 4 on LAMP env.
+Start to develop with Symfony 4 on LAMP environment.
 
 # Stack
-* Docker Containerization
+* Docker Containerization :whale2:
 * Linux debian stretch
 * Apache 2
 * MySQL 5
@@ -30,3 +30,14 @@ rm -Rf /home/wwwroot/sf4/project-name
 Clean Sf cache for the `dev` environment : `bin/console ca:cl`
 
 Go to `localhost` and enjoy :v:
+
+# Useful docker :whale2: commands
+
+## List containers (from docker compose folder)
+`docker-compose ps`
+
+## Restart services (apache, mysql, php, phpmyadmin, maildev)
+`docker-compose restart`
+
+## Stop containers
+`docker container stop sf4_phpmyadmin sf4_maildev sf4_mysql sf4_php sf4_apache`
